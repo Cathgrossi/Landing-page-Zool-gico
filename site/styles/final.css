@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@font-face {
+    font-family: 'THE MEZIRANE';
+    src: url('THE MEZIRANE.ttf') format(truetype), url('THE MEZIRANE.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.home-title {
+    font-family: 'THE MEZIRANE';
+    text-decoration: none;
+    margin: 30px;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+}
+
+.home-cad {
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(119, 0, 255);
+    border-radius: 40px;
+    padding: 0 30px 0 30px;
+}
+
+.cad-btn {
+    margin: 7px;
+}
+
+.text-btn-cad {
+    font-family: 'Staatliches', cursive;
+    color: black;
+}
+
+
+/*main*/
+
+.meio {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.meio p {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.tittle-fp {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'THE MEZIRANE';
+    letter-spacing: 7px;
+    font-size: 150px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 0 0.2em rgb(164, 163, 168);
+}
+
+.tittle-fp span {
+    color: rgb(119, 0, 255);
+    font-size: 155px;
+    text-shadow: 0 0 0.2em rgb(91, 81, 168);
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px dotted white;
+}
+
+.footer-left {
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.left-tittle-footer {
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.txt-footer-left {
+    font-family: 'Oxygen', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-center {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.center-tittle-footer {
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.txt-footer-center {
+    font-family: 'Oxygen', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-right {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    text-decoration: none;
+}
+
+.img-footer img {
+    width: 20px;
+    filter: invert(100%);
+}

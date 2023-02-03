@@ -1,0 +1,12 @@
+CREATE TABLE usuario (
+    codigo int PRIMARY KEY AUTO_INCREMENT ,
+    nome varchar(60) ,
+    sobrenome varchar(60),
+    email varchar(90) ,
+    senha varchar(60),
+    confirmpassword varchar(60),
+    datanasc varchar(60),
+    endereco varchar(90),
+    telefone varchar(11) ,
+    genero varchar(11)
+)    

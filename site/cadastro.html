@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <title>Cadastro F.P.</title>
+
+
+    <script>
+        function Verificar() {
+            var n, s, e, t;
+            document.form1.txtNome.style.background = "white";
+            document.form1.txtSobrenome.style.background = "white";
+            document.form1.txtEmail.style.background = "white";
+            document.form1.nunTell.style.background = "white";
+
+            n = document.getElementById("txtNome").value;
+            if (n.length == 0) {
+                alert("preencher corretamente campo nome");
+                document.form1.txtNome.style.background = "#d6cbd3";
+                document.form1.txtNome.focus();
+                return false;
+            }
+
+            s = document.getElementById("txtSobrenome").value;
+            if (s.length == 0) {
+                alert("preencher corretamente campo sobrenome");
+                document.form1.txtSobrenome.style.background = "#d6cbd3";
+                document.form1.txtSobrenome.focus();
+                return false;
+            }
+
+            e = document.getElementById("txtEmail").value;
+            if (e.indexOf("@") < 0 || e.length == 0) {
+                alert("preencher corretamente campo e-mail");
+                document.form1.txtEmail.style.background = "#d6cbd3";
+                document.form1.txtEmail.focus();
+                return false;
+            }
+
+            t = document.getElementById("nunTell").value;
+            if (isNaN(t) || t.length == 0) {
+                alert("Preencher corretamente o campo telefone sem traços ou parenteses");
+                document.form1.nunTell.style.background = "#d6cbd3";
+                document.getElementById("nunTell").value = "";
+                document.form1.nunTell.focus();
+                return false;
+            }
+
+            document.form1.submit();
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="ladding.html" class="home-title">
+            <div class="title">
+                <div class="text-title">findparty</div>
+            </div>
+        </a>
+        <a href="info.html" class="home-cad">
+            <div class="cad-btn">
+                <div class="text-btn-cad">saiba mais</div>
+            </div>
+        </a>
+    </header>
+
+
+    <section>
+        <div class="form">
+
+            <div class="left-side">
+                <img src="styles/img-logo.png" alt="">
+            </div>
+            <form class="cad" name="form1" action="grava.jsp" method="post">
+                <fieldset>
+
+                    <h2>Cadastro</h2>
+
+                    <div class="input-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="txtNome" id="txtNome" maxlength="30" placeholder="digite seu primeiro nome" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="nome">Sobrenome</label>
+                        <input type="text" name="txtSobrenome" id="txtSobrenome" maxlength="80" placeholder="digite seu sobrenome" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="txtEmail" id="txtEmail" maxlength="50" placeholder="digite seu email" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="nome">Senha</label>
+                        <input type="password" name="password" id="password" maxlength="50" placeholder="digite sua senha" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="nome">Confirme a senha</label>
+                        <input type="password" name="confirmpassword" id="confirmpassword" maxlength="50" placeholder="confirme sua senha" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="date">Data de Nascimento</label>
+                        <input type="date" id="date" name="date"> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="txtAdress" id="txtAdress" maxlength="150" placeholder="digite seu endereço" required> <br>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="nunTell" id="nunTell" maxlength="20" placeholder="(xx) xxxx-xxxx" required> <br>
+                    </div>
+
+                    <h4>Gênero</h4>
+
+                    <label for="male">Masculino</label>
+                    <input type="radio" id="male" name="gender">
+
+                    <label for="female">Feminino</label>
+                    <input type="radio" id="female" name="gender">
+
+                    <label for="outro">Outro</label>
+                    <input type="radio" id="outro" name="gender">
+
+                    <label for="none">Prefiro não identificar</label>
+                    <input type="radio" id="none" name="gender"> <br>
+
+                    <a href="final.html">
+                        <input type="submit" value="Gravar" id="button" onclick="Verificar()">
+                    </a>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+
+    <div class="divisao"></div>
+
+    <footer>
+        <div class="footer-left">
+            <div class="left-tittle-footer">findparty</div>
+            <div class="txt-footer-left">
+                © Copyright 2022 Findparty, Inc.
+                <br> All rights reserved for <br> Catherine Grossi
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="center-tittle-footer">Company</div>
+            <div class="txt-footer-center">
+                Jobs
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="right-tittle-footer">follow us</div>
+            <div class="img-footer-list">
+                <a href="" class="img-footer">
+                    <img src="styles/redes sociais/facebook-icon.png" alt="">
+                </a>
+                <a href="" class="img-footer">
+                    <img src="styles/redes sociais/instagram-icon.png" alt="">
+                </a>
+                <a href="" class="img-footer">
+                    <img src="styles/redes sociais/youtube-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="divisao"></div>
+
+</body>
+
+</html>

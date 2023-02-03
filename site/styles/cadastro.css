@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@font-face {
+    font-family: 'THE MEZIRANE';
+    src: url('THE MEZIRANE.ttf') format(truetype), url('THE MEZIRANE.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+/*header*/
+
+header {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.home-title {
+    font-family: 'THE MEZIRANE';
+    text-decoration: none;
+    margin: 30px;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+}
+
+.home-cad {
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(119, 0, 255);
+    border-radius: 40px;
+    padding: 0 30px 0 30px;
+}
+
+.cad-btn {
+    margin: 7px;
+}
+
+.text-btn-cad {
+    font-family: 'Staatliches', cursive;
+    color: black;
+}
+
+
+/*form img*/
+
+.form {
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 0, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px rgb(55, 4, 112);
+}
+
+.cad {
+    margin: 20px;
+}
+
+.left-side {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side img {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: 'THE MEZIRANE';
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+label,
+h4 {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: baseline;
+}
+
+input {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#button {
+    border: none;
+    background-color: black;
+    color: rgb(119, 0, 255);
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+    font-size: 15px
+}
+
+#button:hover {
+    background-color: rgb(42, 4, 87);
+    color: white;
+}
+
+.divisao {
+    margin: 150px;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px dotted white;
+}
+
+.footer-left {
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.left-tittle-footer {
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.txt-footer-left {
+    font-family: 'Oxygen', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-center {
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.center-tittle-footer {
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.txt-footer-center {
+    font-family: 'Oxygen', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-right {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'THE MEZIRANE';
+    color: rgb(119, 0, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    text-decoration: none;
+}
+
+.img-footer img {
+    width: 20px;
+    filter: invert(100%);
+}
